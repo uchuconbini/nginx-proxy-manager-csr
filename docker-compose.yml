@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: /home/deploy
+      dockerfile: nginx-proxy-manager/Dockerfile
+    image: nginx-proxy-manager-custom:latest
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
