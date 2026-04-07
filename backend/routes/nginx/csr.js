@@ -32,15 +32,15 @@ router
 			}
 
 			const {
-				commonName,
+				common_name: commonName,
 				organization = "",
-				organizationalUnit = "",
+				organizational_unit: organizationalUnit = "",
 				locality = "",
 				state = "",
 				country = "",
 				email = "",
-				keySize = "2048",
-				keyType = "rsa",
+				key_size: keySize = "2048",
+				key_type: keyType = "rsa",
 			} = req.body;
 
 			if (!commonName || commonName.trim() === "") {
