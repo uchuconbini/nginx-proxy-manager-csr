@@ -841,5 +841,59 @@
 	},
 	"users": {
 		"defaultMessage": "Users"
+	},
+	"ssl-checker": {
+		"defaultMessage": "SSL Checker"
+	},
+	"ssl-checker.title": {
+		"defaultMessage": "SSL Certificate Checker"
+	},
+	"ssl-checker.subtitle": {
+		"defaultMessage": "Check the SSL certificate expiration for any domain or URL"
+	},
+	"ssl-checker.check": {
+		"defaultMessage": "Check"
+	},
+	"ssl-checker.status.valid": {
+		"defaultMessage": "Valid"
+	},
+	"ssl-checker.status.expiring-soon": {
+		"defaultMessage": "Expiring Soon"
+	},
+	"ssl-checker.status.expired": {
+		"defaultMessage": "Expired"
+	},
+	"ssl-checker.alert.expired": {
+		"defaultMessage": "This certificate has expired. HTTPS connections will fail."
+	},
+	"ssl-checker.alert.expiring-soon": {
+		"defaultMessage": "This certificate expires in {days} days. Renew it soon."
+	},
+	"ssl-checker.field.subject": {
+		"defaultMessage": "Common Name"
+	},
+	"ssl-checker.field.issuer": {
+		"defaultMessage": "Issued By"
+	},
+	"ssl-checker.field.valid-from": {
+		"defaultMessage": "Valid From"
+	},
+	"ssl-checker.field.valid-to": {
+		"defaultMessage": "Valid To"
+	},
+	"ssl-checker.field.days-remaining": {
+		"defaultMessage": "Days Remaining"
+	},
+	"ssl-checker.field.days-remaining.value": {
+		"defaultMessage": "{days} days"
+	},
+	"ssl-checker.field.days-remaining.expired": {
+		"defaultMessage": "Expired {days} days ago"
+	},
+	"ssl-checker.field.sans": {
+		"defaultMessage": "Subject Alt Names"
+	},
+	"ssl-checker.field.fingerprint": {
+		"defaultMessage": "Fingerprint (SHA-256)"
 	}
 }

@@ -18,10 +18,11 @@ RUN yarn locale-compile && yarn build
 # and overlay our custom backend route + rebuilt frontend
 FROM jc21/nginx-proxy-manager:2.14.0
 
-# Copy the new CSR route into the container
+# Copy custom backend routes
 COPY npm-source/backend/routes/nginx/csr.js /app/routes/nginx/csr.js
+COPY npm-source/backend/routes/nginx/ssl-checker.js /app/routes/nginx/ssl-checker.js
 
-# Copy the modified main.js (registers the CSR route)
+# Copy the modified main.js (registers all custom routes)
 COPY npm-source/backend/routes/main.js /app/routes/main.js
 
 # Replace the frontend with the newly compiled version that includes the CSR page

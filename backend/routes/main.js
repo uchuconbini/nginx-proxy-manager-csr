@@ -6,6 +6,7 @@ import auditLogRoutes from "./audit-log.js";
 import accessListsRoutes from "./nginx/access_lists.js";
 import certificatesHostsRoutes from "./nginx/certificates.js";
 import csrRoutes from "./nginx/csr.js";
+import sslCheckerRoutes from "./nginx/ssl-checker.js";
 import deadHostsRoutes from "./nginx/dead_hosts.js";
 import proxyHostsRoutes from "./nginx/proxy_hosts.js";
 import redirectionHostsRoutes from "./nginx/redirection_hosts.js";
@@ -56,6 +57,7 @@ router.use("/nginx/streams", streamsRoutes);
 router.use("/nginx/access-lists", accessListsRoutes);
 router.use("/nginx/certificates", certificatesHostsRoutes);
 router.use("/nginx/csr", csrRoutes);
+router.use("/nginx/ssl-checker", sslCheckerRoutes);
 
 /**
  * API 404 for all other routes

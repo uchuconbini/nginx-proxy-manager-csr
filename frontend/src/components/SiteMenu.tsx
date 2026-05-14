@@ -6,6 +6,7 @@ import {
 	IconLock,
 	IconSettings,
 	IconShield,
+	IconShieldSearch,
 	IconUser,
 } from "@tabler/icons-react";
 import cn from "classnames";
@@ -88,6 +89,13 @@ const menuItems: MenuItem[] = [
 		to: "/csr",
 		icon: IconCertificate,
 		label: "csr-generator",
+		permissionSection: CERTIFICATES,
+		permission: VIEW,
+	},
+	{
+		to: "/ssl-checker",
+		icon: IconShieldSearch,
+		label: "ssl-checker",
 		permissionSection: CERTIFICATES,
 		permission: VIEW,
 	},

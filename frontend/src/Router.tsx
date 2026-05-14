@@ -26,6 +26,7 @@ const RedirectionHosts = lazy(() => import("src/pages/Nginx/RedirectionHosts"));
 const DeadHosts = lazy(() => import("src/pages/Nginx/DeadHosts"));
 const Streams = lazy(() => import("src/pages/Nginx/Streams"));
 const CSRGenerator = lazy(() => import("src/pages/CSR"));
+const SSLChecker = lazy(() => import("src/pages/SSLChecker"));
 
 function Router() {
 	const health = useHealth();
@@ -72,6 +73,7 @@ function Router() {
 							<Route path="/nginx/404" element={<DeadHosts />} />
 							<Route path="/nginx/stream" element={<Streams />} />
 							<Route path="/csr" element={<CSRGenerator />} />
+								<Route path="/ssl-checker" element={<SSLChecker />} />
 							<Route path="/" element={<Dashboard />} />
 						</Routes>
 					</Suspense>
